@@ -7,5 +7,3 @@ for x in range (5,79):
 thislist = ["Niklas","Victor","Parvin"]
 thislist.reverse()
 print(thislist)
-
-
