@@ -10,4 +10,3 @@ elif gunnerdice > Emmadice:
     print ("Gunner wins")
 elif Emmadice > gunnerdice:
     print ("Emma wins")
-input()

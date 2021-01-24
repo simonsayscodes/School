@@ -7,8 +7,9 @@ for x in range(5):
     if Write == z: 
         print(" Win ") 
         break
-    else:
-        print(" Try again ")
+    elif Write > z:
+        print(" Guess lower :) ")
+    elif Write < z: 
+        print("Guess higher :) ")
+
 #Skriv en lopp för Write. 
-
-
