@@ -77,7 +77,7 @@ alfabet = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','
     
 
 # Info command
-infoOne = "        Narrator:  Hangman is a guessing game where you have 8 tries to guess a word."
+infoOne = "        Narrator:  Hangman is a guessing game where you have 6 tries to guess a word."
 infoTwo = "                   You do this with guessing one letter at a time."
 infoThree = "                   There will appear a guessing board:"
 infoFour = "                   __ __ __ __ __ Guest letters: "
@@ -97,7 +97,7 @@ mediumList = ["umbrella","exist","calculator","headset","clouds","alarmclock","R
 
 hardList = ["programming","universe","microphone","awkward","matrix","funny","microwave","deshawo"]
 
-funList = ["Fun fake David Sjöberg (24,1,2021) says: Om man doppar sina bollar i soja kan man känna smaken"]#"Enligt Simon Jendman (24,1,2021) så kan Ludvig Svahla inte vara en man för att han är under 180 cm lång","Sex är haram","Simon är bra på Cs från okändkälla","Simon Jendman är nästan klar med Halv blodsbprincen","Pog du är snygg idag : )"]
+funList = ["Fun fact David Sjöberg (24,1,2021) says: Om man doppar sina bollar i soja kan man känna smaken","Enligt Simon Jendman (24,1,2021) så kan Ludvig Svahla inte vara en man för att han är under 180 cm lång","Sex är haram","Simon är bra på Cs från okändkälla","Simon Jendman är nästan klar med Halv blodsbprincen","Pog du är snygg idag : )"]
 
 print("__________________________________________________________________________________________")
 print("\n")
@@ -204,93 +204,92 @@ if choice == 1:
 # ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
                
         
-    if choice == 2: 
-        for char in infoOne:
-            sys.stdout.write(char)
-            sys.stdout.flush()
-            time.sleep(0.03)
+if choice == 2: 
+    for char in infoOne:
+        sys.stdout.write(char)
+        sys.stdout.flush()
+        time.sleep(0.03)
         
-        print ("\n")
+    print ("\n")
 
-        for char in infoTwo:
-            sys.stdout.write(char)
-            sys.stdout.flush()
-            time.sleep(0.03)
+    for char in infoTwo:
+        sys.stdout.write(char)
+        sys.stdout.flush()
+        time.sleep(0.03)
         
-        print ("\n")
+    print ("\n")
 
-        for char in infoThree:
-            sys.stdout.write(char)
-            sys.stdout.flush() 
-            time.sleep(0.03)
+    for char in infoThree:
+        sys.stdout.write(char)
+        sys.stdout.flush() 
+        time.sleep(0.03)
 
-        print ("\n")
+    print ("\n")
 
-        for char in infoFour:
-            sys.stdout.write(char)
-            sys.stdout.flush()        
-            time.sleep(0.03)
-        print ("\n")
-        for char in infoFive:
-            sys.stdout.write(char)
-            sys.stdout.flush()
-            time.sleep(0.03)
-        print("\n")
-        for char in infoSix:
-            sys.stdout.write(char)
-            sys.stdout.flush()
-            time.sleep(0.03)
-        print("\n")
-        for char in infoSeven:
-            sys.stdout.write(char)
-            sys.stdout.flush()
-            time.sleep(0.03)
-        print("\n")
-        for char in infoEight:
-            sys.stdout.write(char)
-            sys.stdout.flush()
-            time.sleep(0.03)
-        print("\n")
-        for char in infoNine:
-            sys.stdout.write(char)
-            sys.stdout.flush()
-            time.sleep(0.03)
-        print("\n")
-        for char in infoTen:
-            sys.stdout.write(char)
-            sys.stdout.flush()
-            time.sleep(0.03)
-        print("\n")
-        for char in infoElven:
-            sys.stdout.write(char)
-            sys.stdout.flush()
-            time.sleep(0.03)
-        print("\n")
-        print ("__________________________________________________________________________________________")    # Lägg till animations på första felet 
+    for char in infoFour:
+        sys.stdout.write(char)
+        sys.stdout.flush()        
+        time.sleep(0.03)
+    print ("\n")
+    for char in infoFive:
+        sys.stdout.write(char)
+        sys.stdout.flush()
+        time.sleep(0.03)
+    print("\n")
+    for char in infoSix:
+        sys.stdout.write(char)
+        sys.stdout.flush()
+        time.sleep(0.03)
+    print("\n")
+    for char in infoSeven:
+        sys.stdout.write(char)
+        sys.stdout.flush()
+        time.sleep(0.03)
+    print("\n")
+    for char in infoEight:
+        sys.stdout.write(char)
+        sys.stdout.flush()
+        time.sleep(0.03)
+    print("\n")
+    for char in infoNine:
+        sys.stdout.write(char)
+        sys.stdout.flush()
+        time.sleep(0.03)
+    print("\n")
+    for char in infoTen:
+        sys.stdout.write(char)
+        sys.stdout.flush()
+        time.sleep(0.03)
+    print("\n")
+    for char in infoElven:
+        sys.stdout.write(char)
+        sys.stdout.flush()
+        time.sleep(0.03)
+    print("\n")
+    print ("__________________________________________________________________________________________")    # Lägg till animations på första felet 
     
-    if choice == 3:
-        fun = (random.choice(funList))
-        print("kuk",fun)
+if choice == 3:
+    fun = (random.choice(funList))
+    print(fun)
 
-#elif choice2 == 2: 
-        #word = (random.choice(mediumList)) 
+ 
 
-    elif choice == 4:
-        print ("\n")
-        print ("Good bye : )")
-        exit()
-
+elif choice == 4:
+    print ("\n")
+    print ("Good bye : )")
+    exit()
 
 
-    elif choice >= 5:
-        print ("\n") 
-        startMenu()
-        print ("That's not a option!")
+
+elif choice >= 5:
+    print ("\n") 
+    startMenu()
+    print ("That's not a option!")
 
 
-    elif choice == 0:
-        print ("\n") 
-        startMenu()
-        print ("That's not a option!")
+elif choice == 0:
+    print ("\n") 
+    startMenu()
+    print ("That's not a option!")
 
     
